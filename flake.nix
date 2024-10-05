@@ -1,0 +1,19 @@
+{
+  description = "A basic Nix flake example";
+
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";  
+
+  outputs = { self, nixpkgs }: {
+    packages.default = nixpkgs.stdenv.mkDerivation {
+      pname = "AAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhueAAAAAAAAAAAAAAAAAaajuqerihuoqerfrqhiifuqiufuhqehfiqhfuiorfhue";
+      version = "1.0.0";
+
+      # Specify the source, if needed; otherwise, use null
+      src = null;
+
+      buildCommand = ''
+        echo "you don't install it via flake this is a colorscheme..."
+      '';
+    };
+  };
+}
